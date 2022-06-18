@@ -1,0 +1,240 @@
+{{'{{Infobox Camera'}} 
+| camera_name = {{te_brand}} {{te_model}}
+| image = {{images}}
+| maker = {{te_brand}} 
+| date = {{year}} 
+| sensor_type = {{te_sensor_type}} 
+| sensor_size = {{te_sensor_size}}
+| res = {{max_image_resolution}} 
+| shutter_speeds = {{te_min_shutter_speed}},{{te_max_shutter_speed}} 
+| viewfinder = {{te_viewfinder}}
+| metering = {{te_metering}}
+| interface_Data = {{te_usb}}
+| weight = {{te_weight}}
+| dimensions = {{te_dimensions}}
+| battery = {{te_battery}}
+| made_in = {{te_headquarters}}
+{{'}}'}}
+
+{{"'''"+te_brand+' '+te_model|string+'('+model|string+")'''<ref>{{Cite web|url="+reference+'|title='+name+'|website=www.digicamdb.com}}</ref> ఒక డిజిటల్ కెమెరా. '}}
+{%- set first_line=[
+                    'ఈ కెమెరాను [['+te_brand+']] సంస్థ '+year|string+' లో విపణిలోకి విడుదల చేశారు. ',
+                    year|string+' లో [['+te_brand+']] సంస్థ ఈ మోడల్ ను విపణిలోకి విడుదల చేశారు. ' 
+					] | random
+	-%}
+{{first_line}}  
+{%- if also_known_as != "None" -%}
+    {{'ఈ '+te_model+'('+model+') మోడల్  ను  '+te_also_known_as+'('+also_known_as+') అని కూడా పిలుస్తారు. '}}
+{%- endif -%}
+{{te_brand+' సంస్థ వారి ప్రధాన కార్యాలయం [['+te_headquarters+']] లో ఉంది. '}}
+
+{{'==లక్షణాలు==\n'}}
+{{ "===సెన్సార్===\n" }}
+{%- if sensor_type == "CMOS" -%}
+    {{'ఈ కెమెరా '+te_sensor_type+" సెన్సార్ ను ఉపయోగిస్తుంది. '''సిఎంఓఎస్(CMOS)'''<ref>{{Cite web|url=https://www.techtarget.com/whatis/definition/CMOS-complementary-metal-oxide-semiconductor|title=What is CMOS (complementary metal-oxide semiconductor)? - Definition from WhatIs.com|language=en}}</ref> (కాంప్లిమెంటరీ మెటల్-ఆక్సైడ్ సెమీకండక్టర్) అనేది నేటి కంప్యూటర్ మైక్రోచిప్‌లలో వాడే ట్రాన్సిస్టర్లలో ఉపయోగించే సెమీకండక్టర్ టెక్నాలజీ. "}}
+{%- elif sensor_type == "CCD" -%}
+    {{'ఈ కెమెరా '+te_sensor_type+" సెన్సార్ ను ఉపయోగిస్తుంది.  '''సిసిడి(CCD)'''<ref>{{Cite web|url=https://www.techtarget.com/searchstorage/definition/charge-coupled-device|title=What is a charge-coupled device (CCD)?|language=en}}</ref> (ఛార్జ్-కపుల్డ్ డివైస్) అనేది ఫోటాలను ఎలక్ట్రాలుగా మార్చడం ద్వారా చిత్రాలను సంగ్రహించే లైట్ -సెన్సిటివ్ ఇంటిగ్రేటెడ్ సర్క్యూట్. "}}
+{%- elif sensor_type != "None" -%}
+    {{'ఈ కెమెరా '+te_sensor_type+' సెన్సార్ ను ఉపయోగిస్తుంది. '}}
+{%- endif -%}
+{{'\n\n===రిజల్యూషన్===\n'}}
+{%- if total_megapixels != "None" -%}
+    {{'ఈ '+total_megapixels|string+' మెగాపిక్సెల్ కెమెరా లో '+effective_megapixels|string+' ప్రభావవంతమైన పిక్సెల్స్ ఉంటాయి. '}}
+{%- else -%}
+    {{effective_megapixels|string+' ప్రభావవంతమైన పిక్సెల్స్ కలిగిన కెమెరా. '}}
+{%- endif -%}
+
+ {{'ఈ కెమెరా సెన్సార్ పరిమాణం '+te_sensor_size+'. ఈ కెమెరా సెన్సార్ రిజల్యూషన్ '+sensor_resolution+' పిక్సెల్స్. '}}
+{%- set img_res=[
+                'గరిష్టంగా '+max_image_resolution+' పిక్సెల్స్ రిజల్యూషన్ తో  చిత్రాన్ని రూపొందించే సామర్థ్యం కలిగిన కెమెరా. ',
+                'ఈ కెమెరా గరిష్టంగా'+ max_image_resolution+' పిక్సెల్స్ రిజల్యూషన్ తో చిత్రాన్ని రూపొందిచగలదు. ',
+                'ఈ కెమెరా సామర్ఢ్యనుసారం, ఇది గరిష్టంగా '+max_image_resolution+' పిక్సెల్స్ రిజల్యూషన్ తో చిత్రాన్ని రూపొందిచగలదు. '
+
+            ] | random
+	-%}
+{%- if max_image_resolution != "None" -%}
+{{img_res}}
+{%- endif -%}
+{{'\n\n===స్క్రీన్===\n'}}
+{%- if screen_size != "None" -%}
+    {{"ఈ కెమెరా స్క్రీన్ పరిమాణం "+screen_size+' అంగుళాలు. '}}
+{%- endif -%}
+{%- if screen_resolution != "None" -%}
+    {{"ఈ కెమెరా  "+te_screen_resolution+' స్క్రీన్ రిజల్యూషను కలిగి ఉంది. '}}
+{%- endif -%}
+{{'\n\n===వీడియో===\n'}}
+{%- if video_capture == "yes" -%}
+    {{'ఈ కెమెరా వీడియో క్యాప్చరింగ్ సామర్థ్యాన్ని అందిస్తుంది. '}}
+{%- endif -%}
+{%- set vid_res=[
+                'గరిష్టంగా '+te_max_video_resolution+' పిక్సెల్స్ రిజల్యూషన్ తో వీడియోను రూపొందించే సామర్థ్యం కలిగిన కెమెరా. ',
+                'ఈ కెమెరా గరిష్టంగా'+ te_max_video_resolution+' పిక్సెల్స్ రిజల్యూషన్ తో వీడియోను రూపొందిచగలదు. ',
+                'ఈ కెమెరా సామర్ఢ్యనుసారం, ఇది గరిష్టంగా '+te_max_video_resolution+' పిక్సెల్స్ రిజల్యూషన్ తో వీడియోను రూపొందిచగలదు. '
+
+            ] | random
+	-%}
+{%- if max_video_resolution != "None" -%}
+{{vid_res}}
+{%- endif -%}
+{%- if digital_zoom == "No" -%}
+    {{'డిజిటల్ జూమ్ సౌకర్యం లేని కెమెరా. '}}
+{%- endif -%}
+{%- set dig_zoom=[
+                    'ఈ కెమెరా డిజిటల్ జూమ్ సౌకర్యం కలదు. ',
+                    'ఇది డిజిటల్ జూమ్ సౌకర్యం కలిగి ఉన్న కెమెరా. '
+                ] | random
+	-%}
+{%- if digital_zoom == "Yes" -%}
+    {{dig_zoom}}
+{%- endif -%}
+{%- if optical_zoom != "None" -%}
+    {%- if optical_zoom == "Yes" -%}
+	{{'ఈ కెమెరా  ఆప్టికల్ జూమ్ సౌకర్యం కలదు. '}}
+    {%- elif optical_zoom == "No" -%}
+	{{'ఆప్టికల్ జూమ్ సౌకర్యం లేని కెమెరా. '}}
+    {%- else -%}
+	{{optical_zoom+' రెట్ల ఆప్టికల్ జూమ్ సదుపాయాన్ని కల్పిస్తుంది. '}}
+    {%- endif -%}
+{%- endif -%}
+
+{%- set crop_fact=[
+                    'ఈ కెమెరా  క్రాప్ ఫ్యాక్టర్ '+crop_factor|string+'. ',
+                     crop_factor|string +' క్రాప్ ఫ్యాక్టర్ కలిగి ఉన్న కెమెరా. '
+                ] | random
+	-%}
+{{crop_fact}}
+{{'\n===ఫోకస్===\n'}}
+{%- set man_foc=[
+                    te_brand+' '+te_model|string+'('+model|string+') మాన్యువల్ ఫోకస్ సామర్థ్యం  కలదు. ',
+                    'మాన్యువల్ గా ఫోకస్ చేసే సౌకర్యం ఈ '+te_brand+' '+te_model|string+'('+model|string+')కు వుంది. '
+                ] | random
+	-%}
+{%- if manual_focus == "yes" -%}
+    {{man_foc}}
+{%- endif -%}
+{%- if manual_focus == "no" -%}
+    {{'మాన్యువల్ ఫోకస్ సౌకర్యం లేని కెమెరా. '}}
+{%- endif -%}
+{%- set nfoc_range=[
+                    'ఈ కెమెరా సాధారణ ఫోకస్ '+te_normal_focus_range+' పరిధిలో ఉంటుంది. ',
+                    'ఈ కెమెరా సాధారణ ఫోకస్ పరిధి '+te_normal_focus_range+'. '
+                ] | random
+	-%}
+{%- if normal_focus_range != "None" -%}
+    {{nfoc_range}}
+{%- endif -%}
+{%- set mfoc_range=[
+                    'ఈ కెమెరా మాక్రో ఫోకస్ '+te_macro_focus_range+' పరిధిలో ఉంటుంది. ',
+                    'ఈ కెమెరా మాక్రో ఫోకస్ పరిధి '+te_macro_focus_range+'. '
+                ] | random
+	-%}
+{%- if macro_focus_range != "None" -%}
+    {{mfoc_range}}
+{%- endif -%}
+{%- if focal_length != "None" -%}
+    {{'ఈ కెమెరా ఫోకల్ దృష్టి '+te_focal_length+' పరిధిలో ఉంటుంది. '}}
+{%- endif -%}
+{%- set ape_pri=[
+                    'ఈ కెమెరా ఎపర్చరు ప్రయారిటీ సౌకర్యం కలదు. ',
+                    'ఇది ఎపర్చరు ప్రయారిటీ సౌకర్యం కలిగి ఉన్న కెమెరా. '
+                ] | random
+-%}
+{%- if aperture_priority == "Yes" -%}
+    {{ape_pri}}
+{%- endif -%}
+{%- if aperture_priority == "No" -%}
+    {{'ఎపర్చరు ప్రయారిటీ సౌకర్యం లేని కెమెరా. '}}
+{%- endif -%} 
+{%- if max_aperture != "None" -%}
+    {{'ఈ కెమెరా  గరిష్ట ఎపర్చరు '+max_aperture+' పరిధిలో ఉంటుంది, అదే  35 మి.మీ తో పోలిస్తే '+max_aperture_35+' పరిధిలో ఉంటుంది. '}}
+{%- endif -%} 
+{%- set shut_pri=[
+                    'ఈ కెమెరా షట్టర్ ప్రయారిటీ సౌకర్యం కలదు.',
+                    'ఇది షట్టర్ ప్రయారిటీ సౌకర్యం కలిగి ఉన్న కెమెరా.'
+                ] | random
+-%}
+{%- if shutter_priority == "Yes" -%}
+    {{shut_pri}}
+{%- endif -%}
+{%- if shutter_priority == "No" -%}
+    {{'షట్టర్ ప్రయారిటీ సౌకర్యం లేని కెమెరా. '}}
+{%- endif -%} 
+{%- if min_shutter_speed != "None" -%}
+    {{'ఈ కెమెరా కనిష్ట షట్టర్ వేగం '+te_min_shutter_speed+'కన్లు. '}}
+{%- endif -%}
+{%- if max_shutter_speed != "None" -%}
+    {{'ఈ కెమెరా గరిష్ట షట్టర్ వేగం '+te_max_shutter_speed+'కన్లు. '}}
+{%- endif -%}
+{{'\n\n===భౌతిక లక్షణాలు===\n'}}
+{%- if weight != "None" -%}
+    {{te_brand+' '+te_model|string+'('+model|string+')'+' బరువు '+te_weight+'ములు. '}}
+{%- endif -%} 
+{%- if dimensions != "None" -%}
+    {{'ఈ కెమెరా కొలతలు '+te_dimensions+'. '}}
+{%- endif -%}
+{%- if built_in_flash=="yes" and external_flash=="yes" -%}
+    {{'ఈ కెమెరా బిల్ట్-ఇన్ ఫ్లాష్, ఎక్స్టర్నల్ ఫ్లాష్ సౌకర్యాలను అందిస్తుంది. '}}
+{%- endif -%}
+{%- set flash=[
+                    'బిల్ట్-ఇన్ ఫ్లాష్ సౌకర్యం కలిగి ఉన్న కెమెరా. ',
+                    'ఈ కెమెరా బిల్ట్-ఇన్ ఫ్లాష్ సౌకర్యం కలదు. '
+
+                ] | random
+-%}
+{%- if built_in_flash == "yes" and external_flash=="no" -%}
+    {{flash}}
+    {{'ఎక్స్టర్నల్ ఫ్లాష్ సౌకర్యం లేని కెమెరా. '}}
+{%- endif -%}
+{%- set eflash=[
+                    'ఎక్స్టర్నల్ ఫ్లాష్ సౌకర్యాన్ని కలిగి ఉన్న కెమెరా. ',
+                    'ఈ కెమెరా ఎక్స్టర్నల్ ఫ్లాష్ సౌకర్యం కలదు. '
+
+                ] | random
+-%}
+{%- if external_flash == "yes" and built_in_flash == "no" -%}
+    {{'బిల్ట్-ఇన్ ఫ్లాష్ సౌకర్యం లేని కెమెరా. '}}
+    {{eflash}}
+{%- endif -%}
+{%- if storage_types != "None" -%}
+ {{te_storage_types+'('+storage_types+') స్టోరేజ్ రకాలకు మద్దతు ఉంది. '}}
+{%- endif -%}
+{%- if battery != "None" -%}
+    {{'ఈ కెమెరా  బ్యాటరీ రకం '+te_battery+'('+battery+'). '}}
+{%- endif -%}
+{{'\n\n====కనెక్టివిటీ====\n'}}
+{%- set gps_a=[
+                    'ఈ కెమెరా జిపిఎస్(GPS) కనెక్టివిటీ కలదు. ',
+                    'జిపిఎస్(GPS) కనెక్టివిటీ కలిగి ఉన్న కెమెరా. '
+                ] | random
+-%}
+{%- if gps == "yes" -%}
+    {{gps_a}}
+{%- endif -%}
+{%- if gps == "no" -%}
+    {{'జిపిఎస్(GPS) కనెక్టివిటీ లేని కెమెరా. '}}
+{%- endif -%}
+{%- if wireless == "yes" -%}
+    {{'ఇది వైర్లెస్ కెమెరా. '}}
+{%- endif -%}
+{%- if wireless == "no" -%}
+    {{'ఇది వైర్లెస్ కెమెరా కాదు. '}}
+{%- endif -%}
+{%- set hdmi_a=[
+                    'హెచ్డిఎమ్ఐ(HDMI) పోర్ట్ సౌకర్యం కలిగి ఉన్న కెమెరా. ',
+                    'ఈ కెమెరా హెచ్డిఎమ్ఐ(HDMI) పోర్ట్ సౌకర్యం కలదు. '
+                ] | random
+-%}
+{%- if hdmi == "yes" -%}
+    {{hdmi_a}}
+{%- endif -%}
+{%- if hdmi == "no" -%}
+   {{'హెచ్డిఎమ్ఐ(HDMI) పోర్ట్ సౌకర్యం లేని కెమెరా. '}}
+{%- endif -%}
+{%- if usb.endswith(')') -%}
+     {{'ఈ కెమెరా కల్పించే '+te_usb+'చొప్పున డేటాను బదిలీ చేయగలదు. '}}
+{%- elif usb != "None" -%}
+{{te_usb+' పోర్ట్ సౌకర్యం కలిగి ఉన్న కెమెరా. '}}
+{%- endif -%}
+{{'\n\n==ప్రస్తావనలు==\n<references />'}}
+[[వర్గం:{{te_brand}}]]
+[[వర్గం:తెవికీ డిజిటల్ కెమెరాస్]]
