@@ -1,0 +1,104 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="te">
+	<siteinfo>
+		<sitename>tewiki</sitename>
+		<dbname>indicwiki</dbname>
+		<base>https://tewiki.iiit.ac.in/index.php/%E0%B0%AE%E0%B1%8A%E0%B0%A6%E0%B0%9F%E0%B0%BF_%E0%B0%AA%E0%B1%87%E0%B0%9C%E0%B1%80</base>
+		<generator>MediaWiki 1.34.0</generator>
+		<case>first-letter</case>
+		<namespaces>
+			<namespace key="-2" case="first-letter">మీడియా</namespace>
+			<namespace key="-1" case="first-letter">ప్రత్యేక</namespace>
+			<namespace key="0" case="first-letter" />
+			<namespace key="1" case="first-letter">చర్చ</namespace>
+			<namespace key="2" case="first-letter">వాడుకరి</namespace>
+			<namespace key="3" case="first-letter">వాడుకరి చర్చ</namespace>
+			<namespace key="4" case="first-letter">Project</namespace>
+			<namespace key="5" case="first-letter">Project చర్చ</namespace>
+			<namespace key="6" case="first-letter">దస్త్రం</namespace>
+			<namespace key="7" case="first-letter">దస్త్రంపై చర్చ</namespace>
+			<namespace key="8" case="first-letter">మీడియావికీ</namespace>
+			<namespace key="9" case="first-letter">మీడియావికీ చర్చ</namespace>
+			<namespace key="10" case="first-letter">మూస</namespace>
+			<namespace key="11" case="first-letter">మూస చర్చ</namespace>
+			<namespace key="12" case="first-letter">సహాయం</namespace>
+			<namespace key="13" case="first-letter">సహాయం చర్చ</namespace>
+			<namespace key="14" case="first-letter">వర్గం</namespace>
+			<namespace key="15" case="first-letter">వర్గం చర్చ</namespace>
+			<namespace key="828" case="first-letter">మాడ్యూల్</namespace>
+			<namespace key="829" case="first-letter">మాడ్యూల్ చర్చ</namespace>
+			<namespace key="2300" case="first-letter">Gadget</namespace>
+			<namespace key="2301" case="first-letter">Gadget talk</namespace>
+			<namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+			<namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+			<namespace key="2600" case="first-letter">Topic</namespace>
+		</namespaces>
+	</siteinfo>
+
+
+	<page>
+		<title>కెనాన్ఈఓఎస్ ఆర్3</title>
+		<ns>0</ns>
+		<id>790000</id>
+		<revision>
+			<id>790000</id>
+			<timestamp>2022-05-12T19-53-14Z</timestamp>
+			<contributor>
+				<username>Vakacharla Yaswanth</username>
+				<id>18883</id>
+			</contributor>
+			<comment>xmlpage created</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve" bytes="2752">
+
+{{Infobox Camera
+| camera_name = కెనాన్ ఈఓఎస్ ఆర్3
+| image = Canon EOS R3.jpg
+| maker = కెనాన్
+| date = 2021
+| sensor_type = సి ఎం ఓ ఎస్
+| sensor_size = 36 x 24 మి.మీ
+| res = 6000 x 4000
+| shutter_speeds = 30 సె,1/8000 సె
+| viewfinder = ఎలక్ట్రానిక్
+| metering = మల్టీ, సెంటర్ వెయిటెడ్, స్పాట్, పార్షియల్
+| interface_Data = యూఎస్బి 3.0 (5 జిబి/సె)
+| weight = 1015 గ్రా
+| dimensions = 150 x 142.6 x 87.2 మిమీ
+| battery = పునర్వినియోగపరచదగిన లిథియం-అయాన్ బ్యాటరీ LP-E19
+| made_in = జపాన్
+}}
+
+&apos;&apos;&apos;కెనాన్ ఈఓఎస్ ఆర్3(EOS R3)&apos;&apos;&apos;&lt;ref&gt;{{Cite web|url=https://www.digicamdb.com/specs/canon_eos-r3/|title=Canon EOS R3|website=www.digicamdb.com}}&lt;/ref&gt; అనేది ఒక డిజిటల్ కెమెరా.ఈ కెమెరాను [[కెనాన్]] సంస్థ 2021 లో విపణి లోకి విడుదల చేశారు.కెనాన్ సంస్థ వారి ప్రధాన కార్యాలయం [[జపాన్]] లో ఉంది.
+
+==లక్షణాలు==
+
+===సెన్సార్===
+ఈ కెమెరా సి ఎం ఓ ఎస్ సెన్సార్ ను ఉపయోగిస్తుంది. &apos;&apos;&apos;సిఎంఓఎస్(CMOS)&apos;&apos;&apos;&lt;ref&gt;{{Cite web|url=https://www.techtarget.com/whatis/definition/CMOS-complementary-metal-oxide-semiconductor|title=What is CMOS (complementary metal-oxide semiconductor)? - Definition from WhatIs.com|language=en}}&lt;/ref&gt; (కాంప్లిమెంటరీ మెటల్-ఆక్సైడ్ సెమీకండక్టర్) అనేది నేటి కంప్యూటర్ మైక్రోచిలలో వాడే ట్రాన్సిస్టలలో ఉపయోగించే సెమీకండక్టర్ టెక్నాలజీ.
+
+===రిజల్యూషన్===
+ఈ 26.7 మెగాపిక్సెల్ కెమెరా లో 24.1 ప్రభావవంతమైన మెగాపిక్సెల్లు ఉంటాయి.దీని సెన్సార్ పరిమాణం 36 x 24 మి.మీ. దీని సెన్సార్ రిజల్యూషన్ 6012 x 4008 పిక్సెల్లు.ఈ కెమెరా గరిష్టంగా6000 x 4000 పిక్సెల్ల రిజల్యూషన్ తో చిత్రాన్ని రూపొందిచగలదు.
+
+===స్క్రీన్===
+ఈ కెమెరా స్క్రీన్ పరిమాణం 3.2&quot; అంగుళాలు.ఈ కెమెరా  4,150,000 డాట్స్ స్క్రీన్ రిజల్యూషను కలిగి ఉంది.
+
+===వీడియో===
+వీడియో క్యాప్చరింగ్ సామర్థ్యాన్ని కలిగి ఉన్న కెమెరా.దీనికి  గరిష్టంగా 6000x3164 (60పి/50పి/30పి/24పి/23.98పి) పిక్సెల్ల రిజల్యూషన్ తో వీడియోను రూపొందించే సామర్థ్యం ఉంది.1.0 క్రాప్ ఫ్యాక్టర్ కలిగి ఉన్న కెమెరా.
+
+===ఫోకస్===
+కెనాన్ ఈఓఎస్ ఆర్3(EOS R3)కు మాన్యువల్ ఫోకస్ సామర్థ్యం  కలదు.ఇది ఎపర్చరు ప్రయారిటీ సౌకర్యం కలిగి ఉన్న కెమెరా.ఇది షట్టర్ ప్రయారిటీ సౌకర్యం కలిగి ఉన్న కెమెరా.ఈ కెమెరాకు కనిష్ట షట్టర్ వేగం 30 సెకన్లు.ఈ కెమెరాకు గరిష్ట షట్టర్ వేగం 1/8000 సెకన్లు.
+
+===భౌతిక లక్షణాలు===
+కెనాన్ ఈఓఎస్ ఆర్3(EOS R3) బరువు 1015 గ్రాములు.ఈ కెమెరా కొలతలు 150 x 142.6 x 87.2 మిమీ.దీనికి &quot;అంతర్నిర్మిత ఫ్లాష్&quot; సౌకర్యం లేదు.ఇది ఎక్స్టర్నల్ ఫ్లాష్ సౌకర్యాన్ని అందిస్తుంది.ఎస్డి/ఎస్డిహెచ్సి/ఎస్డిఎక్స్సి/యూహెచ్ఎస్-II/సిఎఫ్-ఎక్స్ప్రెస్ టైప్ బి(SD/SDHC/SDXC/UHS-II/CFexpress Type B) స్టోరేజ్ రకాలకు మద్దతు ఉంది.దీని  బ్యాటరీ రకం పునర్వినియోగపరచదగిన లిథియం-అయాన్ బ్యాటరీ LP-E19(Rechargeable Li-ion Battery LP-E19)
+
+====కనెక్టివిటీ====
+దీనికి జిపిఎస్(GPS) కనెక్టివిటీ వుంది.ఇది వైర్లెస్ కెమెరా.దీనికి హెచ్డిఎమ్ఐ(HDMI) పోర్ట్ సౌకర్యం కలదు.దీనిలో ఉన్న యూఎస్బి 3.0 (5 జిబి/సె) చొప్పున డేటాను బదిలీ చేయగలదు.
+
+==ప్రస్తావనలు==
+&lt;references /&gt;
+[[వర్గం:కెనాన్]]
+			</text>
+			<sha1>ieugpd54ayeylh2umnnp038rtu5w35z</sha1>
+		</revision>
+	</page>
+</mediawiki>
