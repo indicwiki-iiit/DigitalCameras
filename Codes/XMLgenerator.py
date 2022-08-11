@@ -131,7 +131,7 @@ for i in range(len(df)):
 	row['te_max_video_resolution']=row['te_max_video_resolution'].replace('\u200b','')
 	row['optical_zoom']=row['optical_zoom'].replace('\xa0','None')
 	text = template.render(row)
-	title=row['te_brand']+row['te_model']
+	title=row['te_brand']+" "+row['te_model']
 	writePage(title, text, fobj)
 fobj.write('</mediawiki>')
 fobj.close()
